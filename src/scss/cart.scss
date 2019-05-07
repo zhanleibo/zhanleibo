@@ -1,0 +1,254 @@
+@charset "utf-8";
+#header{
+    background: #f7f7f7;
+    width: 100%;
+    height: auto;
+}
+#header_login{
+    height: auto;
+    width: 100%;
+    border-bottom:4px solid  #a71b1c;
+    .header_logo{
+        width: 1200px;
+        height: 75px;
+        padding: 12px 0;
+        margin: 0 auto;
+        a{
+            display: block;
+            width: 75px;
+            height: 75px;
+            float: left;
+            background: url(../img/logo.png) no-repeat left bottom;
+        }
+    }
+    .head_cart{
+        width: 570px;
+        height: 35px;
+        float: right;
+        margin-top: 20px;
+        p{
+            background: url(../img/cart_tit_new.png) no-repeat;
+            width: 570px;
+            height: 35px;
+        }
+    }
+}
+
+
+//购物车
+.cart_wrapper{
+    width: 100%;
+    height: auto;
+    .cart_biaozhunchangdu{
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    //购物车标题
+    .cart_title{
+        height: 36px;
+        line-height: 36px;
+        padding-top: 10px;
+        .ule_shop{
+            color: #000;
+            font-weight: bold;
+            float: left;
+            height: 32px;
+            line-height: 32px;
+            padding: 2px 25px;
+            padding-bottom: 0;
+            font-size: 16px;
+            span{
+                color: #c7181d;;
+            }
+        }
+        .myshouchang{
+            float: right;
+            a{
+                display: inline-block;
+                color: #06c;
+                padding-left: 21px;
+                background: url(http://i0.ulecdn.com/ule/cart/v3/images/ico_myfavor.png) no-repeat left center;
+                
+            }
+        }
+    }
+    //购物车中心内容头部
+    .cart_header{
+        padding-top: 44px;
+        position: relative;
+        .cart_jiangjin{    
+            position: absolute;
+            top: 10px;
+            left: 25px;
+            width: 82px;
+            height: 24px;
+            line-height: 24px;
+            background-image: url(http://i0.ulecdn.com/i/search/2016/0316/zjl_icon_001.png);
+            background-repeat: no-repeat;
+            text-indent: -1000px;
+        }
+        ul{
+            height: 36px;
+            line-height: 36px;
+            padding: 0 10px;
+            background-color: #f3f3f3;
+            .chk-all{
+                width: 14px;
+                height: 14px;
+                margin: 11px auto;
+            }
+        }
+    }
+    //购物车底部
+    .cart_foot{
+        padding: 15px 10px 30px;
+        height: 24px;
+        line-height: 24px;
+        a{
+            display: inline-block;
+            width: 108px;
+            height: 24px;
+            padding-left: 20px;
+        }
+    }
+}
+//每一条商品
+.cart_store{
+    position: relative;
+    padding-top: 10px;
+    .shop_name{
+        ul{
+            height: 34px;
+            line-height: 34px;
+            padding: 0 10px;
+            a{    
+                float: left;
+                font-size: 14px;
+                color: #1475ba;
+                padding-left: 21px;
+                background: url(http://i0.ulecdn.com/ule/cart/v3/images/icons.png) no-repeat 0 9px;
+            }
+        }
+    }
+}
+.cart_items{
+    border: solid 1px #e8e8e8;
+    padding: 0 9px;
+    ul{
+        overflow: hidden;
+        padding: 15px 0;
+        .shop_img{
+            float: left;
+        }
+        .shop_icons{      
+            float: left;
+            width: 190px;
+            margin-left: 10px;
+            height: 44px;
+            line-height: 22px;
+        }
+    }
+}
+.cart_attr{
+    width: 160px;
+    float: left;
+    height: 80px;
+    line-height: 22px;
+    p{
+        color: #666;
+    }
+}           
+//购物车结算
+.cart_settle{
+    width: 100%;
+    height: 60px;
+    background-color: #f3f3f3;
+    .cart_total{    
+        position: relative;
+        width: 1200px;
+        height: 40px;
+        margin: 0 auto;
+        padding: 10px 0;
+        dl{
+            float: left;
+            width: 100px;
+            line-height: 20px;
+        }
+        .prod-totalprice {
+            width: auto;
+            dd {
+            line-height: 40px;
+            margin-left: 5px;
+            color: #c42e15;
+            font-size: 36px;
+            float: left;
+        }
+        dt{
+            float: left;
+        }
+        }
+        .fr{
+            float: right;
+            .btn_continue{
+                float: left;
+                width: 98px;
+                height: 38px;
+                line-height: 38px;
+                margin-right: 10px;
+                text-align: center;
+                font-size: 14px;
+                font-family: "microsoft yahei";
+                background-color: #fff;
+                border: solid 1px #bbb;
+                border-radius: 4px;
+
+            }
+            .btn_ordernow{
+                float: left;
+                width: 130px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: "microsoft yahei";
+                background-color: #d10208;
+                border: solid 1px #a61325;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+//购物车相同样式
+.cart-check{
+    width: 34px;
+    text-align: center;
+    float: left;
+}
+.cart-name{
+    width: 490px;
+    float: left;
+}
+.cart-price{
+    width: 100px;
+    float: left;
+}
+.cart-count{
+    float: left;
+    width: 140px;
+}
+.cart-total{
+    float: left;
+    width: 100px;
+}
+.cart-action{
+    float: left;
+    width: 60px;
+}
+em{
+    font-style: normal;
+}

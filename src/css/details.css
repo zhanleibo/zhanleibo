@@ -1,0 +1,310 @@
+@charset "UTF-8";
+#header {
+  background: #f7f7f7;
+  width: 100%;
+  height: auto; }
+
+img {
+  width: 100%; }
+
+.header_search {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 7px;
+  position: relative;
+  overflow: hidden; }
+  .header_search p {
+    width: 610px;
+    line-height: 18px;
+    margin-top: 5px;
+    height: 18px;
+    float: right; }
+  .header_search .header_search_logo {
+    width: 75px;
+    height: 75px;
+    float: left;
+    background: url(../img/logo.png) no-repeat left bottom;
+    cursor: pointer; }
+  .header_search form {
+    width: 610px;
+    margin: 0 auto;
+    margin-top: 20px;
+    float: right; }
+    .header_search form .form_text {
+      width: 447px;
+      float: left;
+      border: solid 3px #c7181d;
+      border-right: 0;
+      padding: 0 5px;
+      height: 30px;
+      line-height: 30px;
+      background: #fff;
+      font-size: 14px;
+      box-sizing: content-box; }
+    .header_search form .form_button {
+      width: 73px;
+      height: 36px;
+      background: url(../img/headsearch_store_new.png) no-repeat -370px 0px;
+      border: 1px solid red;
+      border-width: 1px 0 1px 1px;
+      float: left; }
+    .header_search form .form_right {
+      background-position: -440px 0;
+      border-width: 1px 1px 1px 0; }
+
+.storeheader {
+  width: 100%;
+  height: 36px;
+  background-color: #a71b1b;
+  border-top: 1px solid #7A090B; }
+  .storeheader .storeheader_main {
+    width: 1200px;
+    margin: 0 auto; }
+    .storeheader .storeheader_main .storeheader_grade {
+      position: relative;
+      float: left;
+      border-left: 1px solid #a71b1b;
+      border-right: 1px solid #a71b1b; }
+      .storeheader .storeheader_main .storeheader_grade .storeheader_name {
+        line-height: 36px;
+        padding: 0 10px;
+        width: 80px;
+        height: 36px;
+        color: #fff;
+        font-size: 16px;
+        float: left; }
+      .storeheader .storeheader_main .storeheader_grade .storeheader_star {
+        width: 100px;
+        height: 36px;
+        line-height: 36px;
+        display: block;
+        float: left;
+        position: relative; }
+        .storeheader .storeheader_main .storeheader_grade .storeheader_star i {
+          background: url(../img/ratestar2.png) no-repeat left center;
+          display: block;
+          width: 50px;
+          height: 36px; }
+        .storeheader .storeheader_main .storeheader_grade .storeheader_star em {
+          position: absolute;
+          right: 0;
+          font-style: normal;
+          top: 0;
+          padding-right: 25px;
+          color: #fff; }
+      .storeheader .storeheader_main .storeheader_grade .storeheader_count {
+        display: none;
+        border: 1px solid #9C0003;
+        border-top: none;
+        width: 288px;
+        position: absolute;
+        top: 36px;
+        left: 0;
+        color: #656565; }
+        .storeheader .storeheader_main .storeheader_grade .storeheader_count .store_good {
+          width: 258px;
+          float: left;
+          padding-left: 10px;
+          padding-bottom: 8px;
+          border-bottom: 1px dotted #ABABAB; }
+          .storeheader .storeheader_main .storeheader_grade .storeheader_count .store_good h4 {
+            font-size: 16px;
+            margin-right: 10px;
+            height: 24px;
+            line-height: 24px;
+            color: #000; }
+            .storeheader .storeheader_main .storeheader_grade .storeheader_count .store_good h4 span {
+              color: #DD4434;
+              font-size: 16px;
+              padding-left: 4px; }
+          .storeheader .storeheader_main .storeheader_grade .storeheader_count .store_good .storeDescription {
+            float: left;
+            width: 72px;
+            line-height: 22px; }
+        .storeheader .storeheader_main .storeheader_grade .storeheader_count .storeView {
+          width: 258px;
+          float: left;
+          padding: 15px 0 15px 10px; }
+          .storeheader .storeheader_main .storeheader_grade .storeheader_count .storeView a {
+            display: block;
+            float: left;
+            background: #F8822B;
+            width: 77px;
+            height: 22px;
+            line-height: 20px;
+            text-align: center;
+            border: 1px solid #D45B16;
+            color: #fff; }
+          .storeheader .storeheader_main .storeheader_grade .storeheader_count .storeView span {
+            display: block;
+            float: left;
+            background: #F8822B;
+            width: 77px;
+            height: 22px;
+            line-height: 20px;
+            text-align: center;
+            color: #666;
+            background: url(../img/addfav2.jpg) no-repeat 0 center;
+            margin-left: 25px; }
+    .storeheader .storeheader_main .storeheader_service {
+      padding: 10px 0 0 10px; }
+      .storeheader .storeheader_main .storeheader_service span {
+        display: block;
+        width: 77px;
+        height: 20px;
+        background: url(../img/btn_service_offline.gif) no-repeat;
+        float: left; }
+    .storeheader .storeheader_main .storeheader_collect {
+      float: right;
+      line-height: 36px;
+      height: 36px;
+      color: #fff;
+      position: relative;
+      padding-right: 165px; }
+      .storeheader .storeheader_main .storeheader_collect .storeheader_shouchang {
+        color: #fcc;
+        background: url(../img/storettbg.png) no-repeat 0 -200px;
+        padding-left: 30px;
+        display: block;
+        height: 24px;
+        line-height: 24px;
+        float: left;
+        margin-right: 20px; }
+      .storeheader .storeheader_main .storeheader_collect .storeheader_QR {
+        display: none;
+        position: absolute;
+        left: -15px;
+        top: 26px;
+        width: 100px;
+        height: 123px;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #b3b3b3;
+        border-top: 0; }
+        .storeheader .storeheader_main .storeheader_collect .storeheader_QR img {
+          width: 100%; }
+        .storeheader .storeheader_main .storeheader_collect .storeheader_QR p {
+          color: #C52321;
+          text-align: center;
+          width: 100px;
+          height: 15px;
+          line-height: 15px;
+          font-size: 12px;
+          font-weight: bold; }
+    .storeheader .storeheader_main .storeheader_cart {
+      background: url(../img/bg_shopcart.png) no-repeat right top;
+      height: 41px;
+      color: #fff;
+      width: 153px;
+      position: absolute;
+      right: 0;
+      top: -15px; }
+      .storeheader .storeheader_main .storeheader_cart span {
+        height: 37px;
+        line-height: 44px;
+        padding-left: 41px;
+        padding-top: 4px;
+        color: #fff;
+        text-align: left; }
+
+#mian {
+  width: 1200px;
+  height: 540px;
+  margin: 0 auto;
+  border: 1px solid #eee; }
+  #mian .left {
+    float: left;
+    width: 420px;
+    padding: 20px;
+    position: relative; }
+    #mian .left .smallpic {
+      width: 420px;
+      height: 420px;
+      position: relative; }
+      #mian .left .smallpic .smallfang {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        opacity: 0.1;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        cursor: move;
+        display: none; }
+    #mian .left .bigfang {
+      width: 420px;
+      height: 420px;
+      border: 1px solid #eee;
+      position: absolute;
+      top: 0;
+      left: 430px;
+      z-index: 1111;
+      display: none;
+      overflow: hidden; }
+      #mian .left .bigfang .bigpic {
+        width: 800px;
+        height: 800px; }
+    #mian .left .carousel_ul {
+      height: 85px;
+      overflow: hidden; }
+      #mian .left .carousel_ul li {
+        float: left;
+        width: 60px;
+        height: 60px;
+        list-style: none;
+        margin: 5px 8px;
+        padding: 3px;
+        border: 1px solid #eee; }
+  #mian .right {
+    float: left;
+    width: 500px;
+    height: 540px;
+    position: relative; }
+    #mian .right h1 {
+      font-size: 16px;
+      color: #333;
+      overflow: hidden;
+      line-height: 22px;
+      padding-top: 18px; }
+    #mian .right .money {
+      padding-top: 5px;
+      padding-bottom: 20px;
+      font-size: 12px;
+      color: #ABABAB; }
+      #mian .right .money span {
+        vertical-align: middle;
+        color: #c52e15;
+        font-family: "微软雅黑";
+        font-size: 30px;
+        font-weight: bold; }
+      #mian .right .money i {
+        font-style: normal; }
+    #mian .right .getsth {
+      position: absolute;
+      bottom: 50px;
+      left: 70px; }
+      #mian .right .getsth .buy {
+        background: url(../img/zjl_icon_002.png) 0 0 no-repeat;
+        width: 128px;
+        height: 40px;
+        text-indent: -999em;
+        overflow: hidden;
+        display: block;
+        float: left;
+        cursor: pointer;
+        margin-right: 10px;
+        border: 1px solid #c52e15; }
+      #mian .right .getsth .shoppingcart {
+        background: url(../img/zjl_icon_002.png) -129px 0 no-repeat;
+        width: 148px;
+        height: 40px;
+        text-indent: -999em;
+        overflow: hidden;
+        display: block;
+        float: left;
+        cursor: pointer;
+        border: 1px solid #c52e15; }
+
+/*# sourceMappingURL=details.css.map */

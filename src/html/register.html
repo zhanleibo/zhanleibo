@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css">
+    <title>register</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="header_login">
+        <div class="header_logo">
+            <a href="#"></a>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login_main">
+            <div class="login_title">
+                <a href="#">新用户注册</a>
+            </div>
+            <form>
+                <p>
+                    <label>手机号码</label>
+                    <input type="text" placeholder="请输入您的手机号">
+                    <span></span>
+                </p>
+                <p>
+                    <label>设置密码</label>
+                    <input type="text" placeholder="请设置6-20位字符密码">
+                    <span></span>
+                </p>
+                <p>
+                    <label>确认密码</label>
+                    <input type="text" placeholder="再次输入密码">
+                    <span></span>
+                </p>
+                <p>
+                    <label></label>
+                    <input type="checkbox" class="check">
+                    <span class="checktext">我接受<a href="#">《邮乐用户协议》</a><a href="#">《隐私权政策》</a>及其相关的条款和条件</span>
+                </p>
+                <p>
+                    <label></label>
+                    <input type="button" value="立即注册" class="btn">
+                    <span></span>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../script/thirdplugins/jquery.js"></script>
+    <script>
+        $('#header').load("ule_header.html");
+        $('#footer').load("ule_footer.html");
+    </script>
+</body>
+</html>

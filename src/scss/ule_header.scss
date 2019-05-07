@@ -1,0 +1,174 @@
+@charset "utf-8";
+$header_width:1200px;
+$margin:0 auto;
+$border:1px solid black;
+$header_list: top search;
+$blue:#06c;
+
+@each $var in $header_list {
+    .header_#{$var} {
+                        width: $header_width;
+                        height: auto;
+                        margin: $margin;
+                        font-size: 12px;
+                        font-family: 'microsoft yahei';
+                        }
+       
+}
+.header_top li{
+    float: left;
+    padding: 0 12px;
+    line-height: 22px;
+    height: 27px;
+}
+.blue{
+    color:$blue;
+}
+.header_top{
+    background-color: #f7f7f7;
+    padding-top: 6px;
+    height: 29px;
+    position: relative;
+    z-index: 900;
+    border-bottom: 1px solid #ededed;
+    .header_top_index{
+        float: left !important;
+        height: 22px;
+        line-height: 22px;
+        a{
+            background: url(../img/ico_return-home.png) no-repeat left center;
+            padding-left: 20px;
+        }
+    }
+    .header_top_right{
+        float: right !important;
+        height: 22px;
+        line-height: 22px;
+        .line{
+            position: relative;
+            background: url(../img/header_1407.png) no-repeat -150px 5px;
+            z-index: 2;
+            .arrows{
+                background: url(../img/header_1407.png) no-repeat right 2px;
+                padding-right: 10px;
+            }
+            .iphone{
+                background: url(../img/header_1407.png) no-repeat ;
+                width: 16px;
+                height: 16px;
+                display: block;
+                position: absolute;
+                left: 10px;
+                top: 4px;
+            }
+            .all_list{
+                background: url(../img/header_1407.png) no-repeat -319px 0;
+                width: 16px;
+                height: 16px;
+                display: block;
+                position: absolute;
+                left: 10px;
+                top: 4px;
+            }
+            .after_sale{
+                background: url(../img/header_1407.png) no-repeat -260px -25px;
+                display: block;
+                width: 60px;
+                height: 18px;
+                margin-top: 3px;
+                text-indent: -10000px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+.line{
+    ul{
+    position: absolute;
+    width: 82px;
+    height: auto;
+    top: 22px;
+    left: -1px;
+    padding: 5px 0;
+    border: solid 1px #d9d9d9;
+    border-top: 0;
+    background-color: #fff;
+    display: none;
+    }
+    .iphone_img{
+        width: 180px;
+        height: 180px;
+        left: 50%;
+        margin-left: -90px;
+        border-radius: 8px;
+        padding: 10px 0;
+    }
+}
+.header_all{
+    display: none;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 33px;
+    z-index: 999;
+    padding: 0 0 15px;
+    overflow: hidden;
+    border-bottom: solid 1px #d9d9d9;
+    .header_all_main{
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+        .header_all_main_p{
+            width: 278px;
+            height: 75px;
+            position: absolute;
+            left: 930px;
+            top: 280px;
+            background: url(../img/sprite_topcate.png) no-repeat;
+            background-position: left -64px;
+            a{
+                width: 48px;
+                height: 20px;
+                line-height: 110px;
+                margin: 0 21px 0 0;
+            }
+        }
+    }
+}
+.header_all_main_ul{
+    width: 1270px;
+    height: auto;
+    overflow: hidden;
+    li{
+        width: 255px;
+        height: 70px;
+        margin: 15px 60px 0 0;
+        padding: 0;
+        color: #fff;
+        float: left;
+        overflow: hidden;
+        line-height: 22px;
+        h4{
+            border-bottom: 1px solid #d9d9d9;
+            line-height: 26px;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            height: 26px;
+        }
+        p{
+            width: 260px;
+            a{
+                margin-right: 20px; 
+            }
+        }
+    }      
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+.footer_main {
+  width: 1200px;
+  margin: 0 auto; }
+  .footer_main .footer_banner {
+    height: 56px;
+    border: solid 1px #ddd;
+    border-width: 1px 0;
+    padding: 17px 0;
+    cursor: pointer;
+    background: url(../img/footer1603.png) no-repeat 0 -125px; }
+  .footer_main .footer_helper {
+    padding: 10px 0 20px;
+    text-align: left;
+    overflow: hidden;
+    width: 100%; }
+    .footer_main .footer_helper ul {
+      width: 1300px;
+      overflow: hidden; }
+      .footer_main .footer_helper ul li {
+        width: 120px;
+        padding: 5px 96px 0 0;
+        float: left; }
+      .footer_main .footer_helper ul h4 {
+        color: #666;
+        line-height: 22px;
+        margin: 0 0 5px;
+        border-bottom: dotted 1px #ccc; }
+      .footer_main .footer_helper ul a {
+        display: block;
+        line-height: 22px;
+        color: #888; }
+  .footer_main .footer_license {
+    line-height: 20px;
+    padding: 15px 0 5px;
+    text-align: center;
+    color: #999;
+    border-top: solid 1px #ddd; }
+    .footer_main .footer_license ul {
+      height: 20px;
+      overflow: hidden; }
+      .footer_main .footer_license ul li {
+        float: left;
+        margin-right: 10px; }
+  .footer_main .footer_copyright {
+    line-height: 20px;
+    padding: 0 0 5px;
+    color: #999; }
+  .footer_main .footer_iconlink {
+    height: 35px;
+    cursor: pointer;
+    background: url(../img/footer1603.png) no-repeat; }
+
+/*# sourceMappingURL=ule_footer.css.map */
