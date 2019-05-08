@@ -14,6 +14,12 @@ $blue:#06c;
     height: auto;
     width: 100%
 }
+.active{
+    background: red!important;
+}
+.disnone{
+    display: none;
+}
 //首页头部样式--搜索框
 .header_search{
     width: $header_width;
@@ -110,6 +116,7 @@ $blue:#06c;
     .header_layout{
         width: 1200px;
         margin: 0 auto;
+        position: relative;
         .header_shu{
             position: relative;
             width: 190px;
@@ -129,8 +136,8 @@ $blue:#06c;
     }
 }
 .header_shu{
+        background-color: rgba(248,248,248,0.5);
     ul{
-        background-color: rgba(248,248,248,.9);
         width: 190px;
         li{
             position: relative;
@@ -159,6 +166,7 @@ $blue:#06c;
         position: absolute;
         left: 190px;
         top: 0;
+        background: #fff;
         h4{
             float: left;
             overflow: hidden;
@@ -187,7 +195,9 @@ $blue:#06c;
 .header_heng{
     height: 40px;
     line-height: 40px;
-    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 190px;
     li{
         float: left;
         width: 100px;
@@ -337,7 +347,6 @@ $blue:#06c;
             margin-top: 3px;
             height: 25px;
             background: #ff7b30;
-            float: left;
         }
         h3{
             color: #ff7b30;
@@ -359,7 +368,6 @@ $blue:#06c;
             }
         }
         .more{
-            float: right;
             display: inline-block;
             width: 18px;
             height: 18px;
