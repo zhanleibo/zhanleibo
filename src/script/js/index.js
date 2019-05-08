@@ -26,5 +26,85 @@
     $('.main_banner_qiu>span').on('mouseover',function(){
         $(this).addClass('active').siblings('.main_banner_qiu>span').removeClass('active');
         $('.main_banner_img').eq($(this).index()).show().siblings('.main_banner_img').hide();
+    });
+})();
+
+(function(){
+    $('.main_firstscreen_sanlun>h4').on('mouseover',function(){
+        $(this).addClass('sanlun').siblings('.main_firstscreen_sanlun>h4').removeClass('sanlun');
+        $('.main_firstscreen_box>ul').eq($(this).index()).show().siblings('.main_firstscreen_box>ul').hide();
+    });
+})();
+
+
+//3个轮播图
+(function(){
+    $.ajax({
+        url:'http://10.31.163.88/zhanleibo/php/picdata.php',
+        dataType: 'json',
+        success:function(data){
+            var $str='';
+            $.each(data,function(index,value){
+                $str+=`<li>
+                <a class="prod-img" href="#">
+                    <img src="${value.url}">
+                </a>
+                <p class="prod-name">
+                    <a href="#">${value.title}</a>
+                </p>
+                <p class="prod-price">
+                    <span>¥
+                        <strong>${value.price}</strong>
+                    </span>
+                </p>
+                <p class="shop_area">
+                    <a href="#">${value.name}</a>
+                </p>
+            </li>`;
+            });
+            $('.main_other>ul').html($str);
+        },
+    });
+})();
+
+
+//楼梯
+(function(){
+    var $gundongtiao=$('.gundongtiao');
+    var $louti=$('.gundongtiao a').not('.returntop');
+    var $box=$('#main .main_box');
+    $(window).on('scroll',function(){
+        //滚动条的距离
+        var $top=$(window).scrollTop();
+        if($top>=1500){
+            $gundongtiao.show();
+        }else{
+            $gundongtiao.hide();
+        };
+
+        //4.拖动滚动条，对应的楼梯添加类名，楼梯到了那块区域。
+        //楼层的top值和滚动条距离进行比较
+        $box.each(function(index,element){
+            $boxTop=$(element).offset().top;
+            if($top<$boxTop){
+                $louti.removeClass('active');
+                $louti.eq(index).addClass('active');
+                return false;
+            }
+        });
+    });
+    //每一个a对应一个box
+    $louti.on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $top=$box.eq($(this).index()).offset().top;
+        $('html,body').animate({
+            scrollTop: $top
+        });
+    });
+    //返回顶部
+    $('.returntop').on('click',function(){
+        $("html,body").animate({scrollTop:0},1000);
     })
 })();
+
+

@@ -17,6 +17,14 @@ $blue:#06c;
 .active{
     background: red!important;
 }
+.sanlun{    
+    height: 51px;
+    line-height: 50px;
+    padding-bottom: 0;
+    border-bottom: solid 1px #c5181c;
+    background: #fdf3f2;
+    color: #d63334;
+}
 .disnone{
     display: none;
 }
@@ -270,9 +278,55 @@ $blue:#06c;
         }
     }
     .main_firstscreen_box{
-        width: 1200px;
-        height: 285px;
-        border: 1px solid black;
+        padding-top: 20px;
+        ul{
+            width: 1200px;
+            overflow: hidden;
+            height: auto;
+            li{
+                width: 200px;
+                height: 280px;
+                float: left;
+                padding: 15px;
+                margin: 6px 6px 6px 0;
+                background: #fff;
+                position: relative;
+                .prod-img{
+                    display: block;
+                    img{
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+                .prod-name{
+                    line-height: 22px;
+                    height: 22px;
+                    margin-top: 10px;
+                    a{
+                        font-size: 14px;
+                        display: block;
+                        color: #333;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                .prod-price{
+                    margin-top: 5px;
+                    line-height: 18px;
+                    span{
+                        color: #c52e13;
+                        font-size: 18px;
+                        line-height: 18px;
+                        strong{
+                            margin-left: 4px;
+                            font-size: 18px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @for $i from 1 through 3
@@ -427,7 +481,7 @@ $blue:#06c;
     }
 }
 
-
+//逛一逛
 .main_other{
     padding-top: 20px;
     h1{
@@ -437,8 +491,99 @@ $blue:#06c;
         padding: 10px 0;
     }
     ul{
+        width: 1200px;
         overflow: hidden;
-        height: 500px;
-        border: 1px solid black;
+        height: auto;
+        li{
+            width: 200px;
+            height: 280px;
+            float: left;
+            padding: 15px;
+            margin: 6px 6px 6px 0;
+            background: #fff;
+            position: relative;
+            .prod-img{
+                display: block;
+                img{
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+            .prod-name{
+                line-height: 22px;
+                height: 22px;
+                margin-top: 10px;
+                a{
+                    font-size: 14px;
+                    display: block;
+                    color: #333;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .prod-price{
+                margin-top: 5px;
+                line-height: 18px;
+                span{
+                    color: #c52e13;
+                    font-size: 18px;
+                    line-height: 18px;
+                    strong{
+                        margin-left: 4px;
+                        font-size: 18px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .shop_area{
+                padding: 5px 0;
+                height: 16px;
+                overflow: hidden;
+                a{
+                    float: left;
+                    line-height: 20px;
+                    max-width: 132px;
+                }
+            }
+        }
+    }
+}
+
+
+//5块商品分类滚动条
+.gundongtiao{
+    left: 109.6px;
+    bottom: 25px;
+    display: block;
+    position: fixed;
+    width: 32px;
+    display: none;
+    a{
+        display: block;
+        width: 32px;
+        text-align: center;
+        text-decoration: none;
+        border-bottom: dotted 1px #ccc;
+        height: 32px;
+        padding: 10px 0;
+        span{
+            line-height: 14px;
+            height: 31px;
+            color: #999;
+            font-family: verdana;
+            background-color: #f3f4f6;
+            border-radius: 4px;
+        }
+    }
+    .returntop{    
+        background-position: center center;
+        background: url(http://i0.ulecdn.com/ule/www/hp/2014/0710/images/returntop2.png);
+        margin-top: 10px;
+        height: 40px;
+        background-repeat: no-repeat;
+        border-bottom: 0;
+        margin-left: 4px;
+
     }
 }

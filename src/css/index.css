@@ -10,6 +10,14 @@
 .active {
   background: red !important; }
 
+.sanlun {
+  height: 51px;
+  line-height: 50px;
+  padding-bottom: 0;
+  border-bottom: solid 1px #c5181c;
+  background: #fdf3f2;
+  color: #d63334; }
+
 .disnone {
   display: none; }
 
@@ -226,9 +234,46 @@
       font-weight: normal;
       cursor: pointer; }
   .main_firstscreen .main_firstscreen_box {
-    width: 1200px;
-    height: 285px;
-    border: 1px solid black; }
+    padding-top: 20px; }
+    .main_firstscreen .main_firstscreen_box ul {
+      width: 1200px;
+      overflow: hidden;
+      height: auto; }
+      .main_firstscreen .main_firstscreen_box ul li {
+        width: 200px;
+        height: 280px;
+        float: left;
+        padding: 15px;
+        margin: 6px 6px 6px 0;
+        background: #fff;
+        position: relative; }
+        .main_firstscreen .main_firstscreen_box ul li .prod-img {
+          display: block; }
+          .main_firstscreen .main_firstscreen_box ul li .prod-img img {
+            height: 200px;
+            width: 200px; }
+        .main_firstscreen .main_firstscreen_box ul li .prod-name {
+          line-height: 22px;
+          height: 22px;
+          margin-top: 10px; }
+          .main_firstscreen .main_firstscreen_box ul li .prod-name a {
+            font-size: 14px;
+            display: block;
+            color: #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+        .main_firstscreen .main_firstscreen_box ul li .prod-price {
+          margin-top: 5px;
+          line-height: 18px; }
+          .main_firstscreen .main_firstscreen_box ul li .prod-price span {
+            color: #c52e13;
+            font-size: 18px;
+            line-height: 18px; }
+            .main_firstscreen .main_firstscreen_box ul li .prod-price span strong {
+              margin-left: 4px;
+              font-size: 18px;
+              font-weight: normal; }
 
 .i1 {
   display: inline-block;
@@ -377,8 +422,82 @@
     color: #333;
     padding: 10px 0; }
   .main_other ul {
+    width: 1200px;
     overflow: hidden;
-    height: 500px;
-    border: 1px solid black; }
+    height: auto; }
+    .main_other ul li {
+      width: 200px;
+      height: 280px;
+      float: left;
+      padding: 15px;
+      margin: 6px 6px 6px 0;
+      background: #fff;
+      position: relative; }
+      .main_other ul li .prod-img {
+        display: block; }
+        .main_other ul li .prod-img img {
+          height: 200px;
+          width: 200px; }
+      .main_other ul li .prod-name {
+        line-height: 22px;
+        height: 22px;
+        margin-top: 10px; }
+        .main_other ul li .prod-name a {
+          font-size: 14px;
+          display: block;
+          color: #333;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .main_other ul li .prod-price {
+        margin-top: 5px;
+        line-height: 18px; }
+        .main_other ul li .prod-price span {
+          color: #c52e13;
+          font-size: 18px;
+          line-height: 18px; }
+          .main_other ul li .prod-price span strong {
+            margin-left: 4px;
+            font-size: 18px;
+            font-weight: normal; }
+      .main_other ul li .shop_area {
+        padding: 5px 0;
+        height: 16px;
+        overflow: hidden; }
+        .main_other ul li .shop_area a {
+          float: left;
+          line-height: 20px;
+          max-width: 132px; }
+
+.gundongtiao {
+  left: 109.6px;
+  bottom: 25px;
+  display: block;
+  position: fixed;
+  width: 32px;
+  display: none; }
+  .gundongtiao a {
+    display: block;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: dotted 1px #ccc;
+    height: 32px;
+    padding: 10px 0; }
+    .gundongtiao a span {
+      line-height: 14px;
+      height: 31px;
+      color: #999;
+      font-family: verdana;
+      background-color: #f3f4f6;
+      border-radius: 4px; }
+  .gundongtiao .returntop {
+    background-position: center center;
+    background: url(http://i0.ulecdn.com/ule/www/hp/2014/0710/images/returntop2.png);
+    margin-top: 10px;
+    height: 40px;
+    background-repeat: no-repeat;
+    border-bottom: 0;
+    margin-left: 4px; }
 
 /*# sourceMappingURL=index.css.map */
