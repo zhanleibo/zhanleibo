@@ -58,13 +58,21 @@ $list:header  footer login header_login;
             p{
                 margin-top: 25px;
                 height: 40px;
-                label{
+                span{
                     width: 70px;
                     height: 40px;
                     float: left;
                     font-size: 14px;
                     line-height: 40px;
                     color: #999;
+                }
+                label{
+                    width: 100px;
+                    margin-left: 10px;
+                    height: 40px;
+                    font-size: 14px;
+                    line-height: 40px;
+                    color: #c52e15;
                 }
                 input{
                     width: 278px;

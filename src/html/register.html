@@ -20,37 +20,38 @@
             <div class="login_title">
                 <a href="#">新用户注册</a>
             </div>
-            <form>
+            <form  id="form" method="post" action="http://10.31.163.88/zhanleibo/php/registor.php" >
                 <p>
-                    <label>手机号码</label>
-                    <input type="text" placeholder="请输入您的手机号">
-                    <span></span>
+                    <span>手机号码</span>
+                    <input type="text" placeholder="请输入您的手机号" name="name" id="name">
+                    <label id="name-error" class="error" for="name"></label>
                 </p>
                 <p>
-                    <label>设置密码</label>
-                    <input type="text" placeholder="请设置6-20位字符密码">
-                    <span></span>
+                    <span>设置密码</span>
+                    <input type="password" name="password" placeholder="请设置你的密码" id="password">
+                    <label id="password-error" class="error" for="password"></label>
                 </p>
                 <p>
-                    <label>确认密码</label>
-                    <input type="text" placeholder="再次输入密码">
-                    <span></span>
+                    <span>确认密码</span>
+                    <input type="password" name="repass"placeholder="再次输入密码" id="repass"/>
+                    <label id="repass-error" class="error" for="repass"></label>
                 </p>
                 <p>
-                    <label></label>
+                    <span></span>
                     <input type="checkbox" class="check">
-                    <span class="checktext">我接受<a href="#">《邮乐用户协议》</a><a href="#">《隐私权政策》</a>及其相关的条款和条件</span>
+                    <label class="checktext">我接受<a href="#">《邮乐用户协议》</a><a href="#">《隐私权政策》</a>及其相关的条款和条件</label>
                 </p>
                 <p>
-                    <label></label>
-                    <input type="button" value="立即注册" class="btn">
                     <span></span>
+                    <input type="submit" value="立即注册" class="btn" name="submit">
                 </p>
             </form>
         </div>
     </div>
     <div id="footer"></div>
     <script src="../script/thirdplugins/jquery.js"></script>
+    <script src="../script/thirdplugins/jquery.validate.js"></script>
+    <script src="../script/js/register.js"></script>
     <script>
         $('#header').load("ule_header.html");
         $('#footer').load("ule_footer.html");

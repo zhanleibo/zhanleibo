@@ -59,13 +59,20 @@
       #login .login_main form p {
         margin-top: 25px;
         height: 40px; }
-        #login .login_main form p label {
+        #login .login_main form p span {
           width: 70px;
           height: 40px;
           float: left;
           font-size: 14px;
           line-height: 40px;
           color: #999; }
+        #login .login_main form p label {
+          width: 100px;
+          margin-left: 10px;
+          height: 40px;
+          font-size: 14px;
+          line-height: 40px;
+          color: #c52e15; }
         #login .login_main form p input {
           width: 278px;
           height: 38px;

@@ -21,23 +21,40 @@
     })
 })();
 
-//广告轮播
+
 (function(){
-    $('.main_banner_qiu>span').on('mouseover',function(){
-        $(this).addClass('active').siblings('.main_banner_qiu>span').removeClass('active');
-        $('.main_banner_img').eq($(this).index()).show().siblings('.main_banner_img').hide();
-    });
+    //tab切换
+    var dong=function(tap,img,css){
+        $(tap).on('mouseover',function(){
+            $(this).addClass(css).siblings(tap).removeClass(css);
+            $(img).eq($(this).index()).show().siblings(img).hide();
+        });
+    }
+    //广告
+    dong('.main_banner_qiu>span','.main_banner_img','active');
+    //三个轮播
+    dong('.main_firstscreen_sanlun>h4','.main_firstscreen_box>ul','sanlun');
 })();
 
 (function(){
-    $('.main_firstscreen_sanlun>h4').on('mouseover',function(){
-        $(this).addClass('sanlun').siblings('.main_firstscreen_sanlun>h4').removeClass('sanlun');
-        $('.main_firstscreen_box>ul').eq($(this).index()).show().siblings('.main_firstscreen_box>ul').hide();
-    });
+    //轮播
+    var index = 0;
+    //自动播放
+    var t =function(){
+        setInterval(play, 1000)
+    }; 
+    t();
+    function play() {
+        index++;
+        if (index > 6) {
+            index = 0
+        }
+        $(".main_banner_qiu span").eq(index).addClass('active').siblings().removeClass('active');
+
+        $(".main_banner_img").eq(index).show().siblings().hide();
+    };
 })();
-
-
-//3个轮播图
+//逛一逛
 (function(){
     $.ajax({
         url:'http://10.31.163.88/zhanleibo/php/picdata.php',
@@ -58,7 +75,7 @@
                     </span>
                 </p>
                 <p class="shop_area">
-                    <a href="#">${value.name}</a>
+                    <a href="${value.num}">${value.name}</a>
                 </p>
             </li>`;
             });

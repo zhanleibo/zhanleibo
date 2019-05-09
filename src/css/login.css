@@ -21,7 +21,8 @@
 
 #login {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 20px; }
   #login .login_bg {
     background: url(http://pic1.ulecdn.com/item/user_0102/desc20190211/69624389a5ef2ab0_-1x-1.png) no-repeat center center;
     height: 495px;
