@@ -70,7 +70,6 @@ img {
       .storeheader .storeheader_main .storeheader_grade .storeheader_name {
         line-height: 36px;
         padding: 0 10px;
-        width: 80px;
         height: 36px;
         color: #fff;
         font-size: 16px;
@@ -102,7 +101,9 @@ img {
         position: absolute;
         top: 36px;
         left: 0;
-        color: #656565; }
+        color: #656565;
+        z-index: 11;
+        background: #fff; }
         .storeheader .storeheader_main .storeheader_grade .storeheader_count .store_good {
           width: 258px;
           float: left;
@@ -182,7 +183,8 @@ img {
         background-color: #fff;
         padding: 10px;
         border: 1px solid #b3b3b3;
-        border-top: 0; }
+        border-top: 0;
+        z-index: 11; }
         .storeheader .storeheader_main .storeheader_collect .storeheader_QR img {
           width: 100%; }
         .storeheader .storeheader_main .storeheader_collect .storeheader_QR p {
@@ -281,6 +283,59 @@ img {
         font-weight: bold; }
       #mian .right .money i {
         font-style: normal; }
+      #mian .right .money dt {
+        float: left;
+        line-height: 25px;
+        margin-right: 10px; }
+      #mian .right .money dd {
+        float: left; }
+        #mian .right .money dd .jian {
+          background-color: #f1f1f1;
+          border-right: none;
+          display: block;
+          float: left;
+          width: 24px;
+          height: 24px;
+          border: solid 1px #999;
+          text-align: center;
+          line-height: 24px;
+          background: #fff;
+          font-family: Arial;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 700; }
+        #mian .right .money dd .textField {
+          width: 48px;
+          display: block;
+          float: left;
+          font-family: Arial;
+          text-align: center;
+          height: 24px;
+          line-height: 24px;
+          padding: 0;
+          margin: 0;
+          border: 1px solid #999;
+          font-size: 14px; }
+        #mian .right .money dd .jia {
+          display: block;
+          float: left;
+          width: 24px;
+          height: 24px;
+          border: solid 1px #999;
+          text-align: center;
+          line-height: 24px;
+          background: #fff;
+          font-family: Arial;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 700;
+          background-color: white; }
+        #mian .right .money dd .kucun {
+          margin-left: 10px;
+          line-height: 26px;
+          font-size: 12px;
+          color: #ABABAB;
+          font-weight: normal; }
     #mian .right .getsth {
       position: absolute;
       bottom: 50px;

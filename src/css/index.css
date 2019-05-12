@@ -337,51 +337,54 @@
         color: #999;
         font-size: 14px; }
 
-.main_box .main_box_title {
-  height: 40px;
-  padding-bottom: 1px;
-  margin-right: 2px;
-  border-bottom: 1px solid #ff7b30; }
-  .main_box .main_box_title i {
-    display: inline-block;
-    width: 5px;
-    margin-top: 3px;
-    height: 25px;
-    background: #ff7b30; }
-  .main_box .main_box_title h3 {
-    color: #ff7b30;
-    float: left;
-    margin-left: 15px;
-    margin-right: 10px;
-    font-size: 22px;
-    font-weight: bolder; }
-  .main_box .main_box_title p {
-    float: left;
-    margin-top: 12px;
-    line-height: 16px; }
-    .main_box .main_box_title p a {
+.main_box {
+  margin-bottom: 20px; }
+  .main_box .main_box_title {
+    height: 40px;
+    padding-bottom: 1px;
+    margin-right: 2px;
+    border-bottom: 1px solid #ff7b30; }
+    .main_box .main_box_title i {
+      display: inline-block;
+      width: 5px;
+      margin-top: 3px;
+      height: 25px;
+      background: #ff7b30;
+      float: left; }
+    .main_box .main_box_title h3 {
+      color: #ff7b30;
       float: left;
-      margin-left: 10px;
-      color: #99999b;
-      font-size: 14px; }
-  .main_box .main_box_title .more {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    line-height: 16px;
-    background: url(../img/sprite_channel3.png) no-repeat;
-    background-position: -90px -158px;
-    text-indent: -10000px;
-    overflow: hidden;
-    margin: 7px;
-    margin-right: 0;
-    margin-top: 12px; }
-  .main_box .main_box_title .link {
-    float: right;
-    margin-top: 12px;
-    line-height: 16px;
-    font-size: 14px;
-    color: #333; }
+      margin-left: 15px;
+      margin-right: 10px;
+      font-size: 22px;
+      font-weight: bolder; }
+    .main_box .main_box_title p {
+      float: left;
+      margin-top: 12px;
+      line-height: 16px; }
+      .main_box .main_box_title p a {
+        float: left;
+        margin-left: 10px;
+        color: #99999b;
+        font-size: 14px; }
+    .main_box .main_box_title .more {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      line-height: 16px;
+      background: url(../img/sprite_channel3.png) no-repeat;
+      background-position: -90px -158px;
+      text-indent: -10000px;
+      overflow: hidden;
+      margin: 7px;
+      margin-right: 0;
+      margin-top: 12px; }
+    .main_box .main_box_title .link {
+      float: right;
+      margin-top: 12px;
+      line-height: 16px;
+      font-size: 14px;
+      color: #333; }
 
 .main_box_main {
   height: 550px;

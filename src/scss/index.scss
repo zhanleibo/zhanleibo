@@ -390,6 +390,7 @@ $blue:#06c;
 }
 //
 .main_box{
+    margin-bottom: 20px;
     .main_box_title{
         height: 40px;
         padding-bottom: 1px;
@@ -401,6 +402,7 @@ $blue:#06c;
             margin-top: 3px;
             height: 25px;
             background: #ff7b30;
+            float: left;
         }
         h3{
             color: #ff7b30;

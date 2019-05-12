@@ -54,6 +54,30 @@
         $(".main_banner_img").eq(index).show().siblings().hide();
     };
 })();
+
+//舌尖美食
+(function(){
+    $.ajax({
+        url:'http://10.31.163.88/zhanleibo/php/picdata1.php',
+        dataType:'json',
+        success:function(data){
+            var $str='';
+            $.each(data,function(index,value){
+                $str+=`
+                <li>
+                <a href="details.html?pic=${value.num}"><img src="${value.url}"></a>
+                <p>${value.title}</p>
+                <p>¥ ${value.price}</p>
+            </li>`;
+            });
+            $('.main_box_right>ul').html($str);
+        }
+    })
+})();
+
+
+
+
 //逛一逛
 (function(){
     $.ajax({
@@ -63,11 +87,11 @@
             var $str='';
             $.each(data,function(index,value){
                 $str+=`<li>
-                <a class="prod-img" href="#">
+                <a class="prod-img" href="details.html?pic=${value.num}">
                     <img src="${value.url}">
                 </a>
                 <p class="prod-name">
-                    <a href="#">${value.title}</a>
+                    <a href="details.html?pic=${value.num}">${value.title}</a>
                 </p>
                 <p class="prod-price">
                     <span>¥
@@ -75,7 +99,7 @@
                     </span>
                 </p>
                 <p class="shop_area">
-                    <a href="${value.num}">${value.name}</a>
+                <a href="details.html?pic=${value.num}">${value.name}</a>
                 </p>
             </li>`;
             });

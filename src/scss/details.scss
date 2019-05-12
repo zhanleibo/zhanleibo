@@ -77,7 +77,6 @@ img{
             .storeheader_name{
                 line-height: 36px;
                 padding: 0 10px;
-                width: 80px;
                 height: 36px;
                 color: #fff;
                 font-size: 16px;
@@ -114,7 +113,9 @@ img{
                 position: absolute;
                 top: 36px;
                 left: 0;
-                color: #656565;
+                color: #656565;    
+                z-index: 11;
+                background: #fff;
                 .store_good{
                     width: 258px;
                     float: left;
@@ -208,6 +209,7 @@ img{
                 padding: 10px;
                 border: 1px solid #b3b3b3;
                 border-top: 0;
+                z-index: 11;
             img{
                 width: 100%;
                 }
@@ -330,6 +332,65 @@ img{
             }
             i{
                 font-style: normal;
+            }
+            dt{
+                float: left;
+                line-height: 25px;
+                margin-right: 10px;
+            }
+            dd{
+                float: left;
+                .jian{
+                    background-color: rgb(241, 241, 241);
+                    border-right: none;
+                    display: block;
+                    float: left;
+                    width: 24px;
+                    height: 24px;
+                    border: solid 1px #999;
+                    text-align: center;
+                    line-height: 24px;
+                    background: #fff;
+                    font-family: Arial;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+                .textField{    
+                    width: 48px;
+                    display: block;
+                    float: left;
+                    font-family: Arial;
+                    text-align: center;
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0;
+                    margin: 0;
+                    border: 1px solid #999;
+                    font-size: 14px;
+                }
+                .jia{
+                    display: block;
+                    float: left;
+                    width: 24px;
+                    height: 24px;
+                    border: solid 1px #999;
+                    text-align: center;
+                    line-height: 24px;
+                    background: #fff;
+                    font-family: Arial;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 700;
+                    background-color: rgb(255, 255, 255);
+                }
+                .kucun{
+                    margin-left: 10px;
+                    line-height: 26px;
+                    font-size: 12px;
+                    color: #ABABAB;
+                    font-weight: normal;
+                }
             }
         }
         .getsth{
