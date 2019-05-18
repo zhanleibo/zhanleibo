@@ -34,48 +34,12 @@
                     <li class="cart-check"><input type="checkbox" class="chk-all"></li>
                     <li class="cart-name">商品信息</li>
                     <li class="cart-price">单价</li>
+                    <li class="cart-price">商品数量</li>
                     <li class="cart-total">价格合计</li>
                     <li class="cart-action">操作</li>
                 </ul>
             </div>
             <div class="cart_main">
-                <div class="cart_store">
-                    <div class="shop_name">
-                        <ul>
-                            <li class="cart-check">
-                                <input type="checkbox" class="chk-all">
-                            </li>
-                            <li class="cart-name">
-                                <a href="#">兆美服饰专营店</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="cart_items">
-                        <ul>
-                            <li class="cart-check">
-                                <input type="checkbox" class="chk-all">
-                            </li>
-                            <li class="cart-name">
-                                <a href="#" class="shop_img">
-                                    <img
-                                        src="http://pic.ule.com/pic/user_800132848/product/prd20190428/ba0f28c0364fe6a5_p800x800_m_m.jpg">
-                                </a>
-                                <a href="#" class="shop_icons"> 帽子防紫外线遮脸美肤帽太阳帽夏季遮阳帽防晒帽子双层空顶镜片帽</a>
-                                <i></i>
-                                <div class="cart_attr">
-                                    <p>颜色： 西瓜红</p>
-                                    <p>规格： 不适用</p>
-                                </div>
-                            </li>
-                            <li class="cart-price">¥19.90</li>
-                            <li class="cart-total">¥19.90</li>
-                            <li class="cart-action">
-                                <a href="#">收藏</a>
-                                <a href="#">删除</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="cart_foot">
                 <span class="item-check">
@@ -86,32 +50,28 @@
             </div>
         </div>
         <div class="cart_settle">
-            <div class="cart_total">
-                <dl class="prod-count">
-                    <dt>商品数量：</dt>
-                    <dd><strong>1</strong>件</dd>
-                </dl>
-                <dl class="prod-price">
-                    <dt>价格合计：</dt>
-                    <dd><strong>¥<em>19.90</em></strong></dd>
-                </dl>
-                <dl class="prod-discount">
-                    <dt>促销抵扣</dt>
-                    <dd>- <strong>¥<em>0.00</em></strong></dd>
-                </dl>
-                <dl class="prod-totalprice">
-                    <dt>商品总价：<br><span>不含运费</span></dt>
-                    <dd>¥<em>19.90</em></dd>
-                </dl>
-                <p class="fr">
-                    <a href="#" class="btn_continue">继续购物</a>
-                    <a href="#" class="btn_ordernow">去结账</a>
+        </div>
+        <div class="zezhaoceng">
+            <div class="pdb-title">
+                <h4>确认提示</h4><span>关闭</span>
+            </div>
+            <div class="pdb-content">
+                <div class="pdb-contentframe">
+                    <div class="msg-confirm">您确定要从购物车删除该商品？</div>
+                </div>
+            </div>
+            <div class="pdb-bottom">
+                <p class="pdb-bottom-action">
+                    <a class="btn-action"><em>确认</em></a>
+                    <a class="btn-cancel"><em>取消</em></a>
                 </p>
             </div>
         </div>
     </div>
     <div id="footer"></div>
     <script src="../script/thirdplugins/jquery.js"></script>
+    <script src="../script/thirdplugins/jquery.cookie.js"></script>
+    <script src="../script/js/cart.js"></script>
     <script>
         $('#header').load("ule_header.html");
         $('#footer').load("ule_footer.html");

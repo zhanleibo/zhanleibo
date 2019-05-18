@@ -140,6 +140,12 @@
         padding: 15px 0;
         .shop_img{
             float: left;
+            img{
+                display: block;
+                width: 78px;
+                height: 78px;
+                border: solid 1px #eee;
+            }
         }
         .shop_icons{      
             float: left;
@@ -243,7 +249,13 @@
 }
 .cart-total{
     float: left;
-    width: 100px;
+    width: 100px;    
+    margin-left: 30px;
+    span{
+        font-family: arial;
+        font-weight: bold;
+        color: #c42e15;
+    }
 }
 .cart-action{
     float: left;
@@ -251,4 +263,166 @@
 }
 em{
     font-style: normal;
+}
+.cart-num{
+    float: left;
+    .jian{
+        border-right: none;
+        background: url(http://i0.ulecdn.com/ule/cart/v3/images/icons.png) no-repeat 3px -157px;
+        background-color: #fff;
+        float: left;
+        width: 22px;
+        height: 22px;
+        border: solid 1px #ccc;
+        cursor: pointer;
+    }
+    .jia{
+        border-left: none;
+        background:url(http://i0.ulecdn.com/ule/cart/v3/images/icons.png) no-repeat 3px -141px;
+        background-color: #fff;
+        float: left;
+        width: 22px;
+        height: 22px;
+        border: solid 1px #ccc;
+        cursor: pointer;
+    }
+    .pCount{
+        float: left;
+        width: 44px;
+        height: 22px;
+        line-height: 22px;
+        padding: 0;
+        text-align: center;
+        border: solid 1px #ccc;
+        background-color: #fff;
+    }
+}
+.zezhaoceng{
+    display: none;
+    width: 350px;
+    height: 131px;
+    position: absolute;
+    left: 574.5px;
+    top: 261.5px;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 183, 173);
+    border-image: initial;
+    overflow: hidden;
+    .pdb-title{
+        background-color: rgb(187, 40, 43);
+        color: rgb(255, 255, 255);
+        height: 25px;
+        overflow: hidden;
+        h4{
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 25px;
+            height: 25px;
+            text-indent: 10px;
+            color: rgb(255, 255, 255);
+            padding: 0px;
+            margin: 0px;
+        }
+        span{
+            color: rgb(255, 255, 255);
+            width: auto;
+            float: right;
+            display: block;
+            line-height: 15px;
+            height: 15px;
+            font-size: 12px;
+            cursor: pointer;
+            padding-right: 15px;
+            margin: 5px;
+            background: url(http://i1.ulecdn.com/j/jend/util/dialog/images/dialog_bg_btn.gif) right -49px no-repeat;
+        }
+    }
+    .pdb-content{
+        background-color: rgb(255, 255, 255);
+        color: rgb(102, 102, 102);
+        font-size: 12px;
+        line-height: 150%;
+        overflow: hidden;
+        height: 60px;
+        .pdb-contentframe{
+            .msg-confirm{
+                line-height: 20px;
+                background: url(http://i1.ulecdn.com/j/jend/util/dialog/images/ico_confirm_32.png) 30px 15px no-repeat;
+                padding: 20px 20px 20px 70px;
+            }
+        }
+    }
+    .pdb-bottom{
+        height: 25px;
+        padding: 10px 20px;
+        background: url(http://i1.ulecdn.com/j/jend/util/dialog/images/dialog_bg_bottom.gif) repeat-x;
+        overflow: hidden;
+        .pdb-bottom-action{
+            height: 25px;
+            line-height: 25px;
+            float: right;
+            .btn-action{
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(255, 141, 69);
+                border-image: initial;
+                display: inline-block;
+                margin-right: 5px;
+                height: 23px;
+                line-height: 23px;
+                padding: 0px;
+                text-decoration: none;
+                em{
+                    color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    background-color: rgb(255, 141, 69);
+                    background-position: left 0px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: rgb(255, 183, 76);
+                    border-image: initial;
+                    display: inline-block;
+                    font-style: normal;
+                    font-size: 12px;
+                    height: 12px;
+                    line-height: 12px;
+                    cursor: pointer;
+                    padding: 5px 10px 4px;
+                    background: url(http://i1.ulecdn.com/j/jend/util/dialog/images/dialog_bg_btn.gif) repeat-x;
+                }
+            }
+            .btn-cancel{
+                border-width: 1px;
+                border-style: solid;
+                border-color: rgb(190, 183, 173);
+                border-image: initial;    
+                display: inline-block;
+                margin-right: 5px;
+                height: 23px;
+                line-height: 23px;
+                padding: 0px;
+                text-decoration: none;
+                em{
+                    color: rgb(102, 102, 102);
+                    background-color: rgb(245, 245, 245);
+                    background-position: left -25px;
+                    border-width: 1px;
+                    border-style: solid;
+                    border-color: rgb(255, 255, 255);
+                    border-image: initial;
+                    display: inline-block;
+                    font-style: normal;
+                    font-size: 12px;
+                    height: 12px;
+                    line-height: 12px;
+                    cursor: pointer;
+                    padding: 5px 10px 4px;
+                }
+            }
+        }
+    }
 }
